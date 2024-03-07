@@ -1,0 +1,40 @@
+body{
+    background-color:blue
+}
+
+.header-footer{
+    width:99%;
+    height:75px;
+    border-radius:10px;
+    text-align: center;
+}
+
+#red-header{
+    background-color:red;
+}
+
+#side-nav{
+    width:20%;
+    height:275px;
+    background-color:#26c2c0;
+    margin-top:30px;
+    border-radius:10px;
+    text-align:center;
+    display:inline-block;
+}
+
+#body{
+    width:76%;
+    height: 500px;
+    background-color:black;
+    color:white;
+    display:inline-block;
+    border-radius:10px;
+    text-align:center;
+    margin-left:40px;
+}
+
+#footer{
+    background-color:grey;
+    margin-top:30px;
+}
