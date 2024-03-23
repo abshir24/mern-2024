@@ -1,0 +1,48 @@
+<script>
+    class Boxer{
+    constructor(size,strength, wins, losses){
+        this.size = size
+        this.strength = strength
+        this.wins = wins
+        this.losses = losses
+    }
+
+    printStats(boxerNumber){
+        console.log(`**************************************${boxerNumber}***********************************************`)
+        console.log("Size:", this.size)
+        console.log("Strength:", this.strength)
+        console.log("Wins:", this.wins)
+        console.log("Losses:", this.losses)
+        console.log(`***************************************${boxerNumber}***********************************************`)
+    }
+
+    calculateTotalScore(){
+        return this.size + this.strength + (this.wins/this.losses)
+    }
+
+}
+
+let boxer1 = new Boxer(75, 95, 10,1)
+
+boxer1.printStats("Boxer1")
+
+let boxer2 = new Boxer(74,94,10,2)
+
+boxer2.printStats("Boxer2")
+
+let userBet = prompt("Which boxer would you like to choose? Select 1 or 2")
+
+let winningBoxer = 0
+
+if(boxer1.calculateTotalScore() > boxer2.calculateTotalScore()){
+    winningBoxer = 1
+}else{
+    winningBoxer = 2
+}
+
+if(userBet == winningBoxer){
+    alert("Congratulations you have won!")
+}else{
+    alert("Sorry you have lost. Try again next time!")
+}
+</script>
